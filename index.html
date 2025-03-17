@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#740001">
+    <title>Hogwarts Magical Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="app-header">
+            <button id="menuBtn" class="menu-button">
+                <i class="fas fa-wand-sparkles"></i>
+            </button>
+            <h1>Hogwarts Magical Assistant</h1>
+            <button id="newChatMobileBtn" class="new-chat-mobile">
+                <i class="fas fa-hat-wizard"></i>
+            </button>
+        </header>
+
+        <div class="container">
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-hat-wizard"></i>
+                        </div>
+                        <span>Wizard Profile</span>
+                    </div>
+                </div>
+                <div class="new-chat">
+                    <button id="newChatBtn">
+                        <i class="fas fa-wand-sparkles"></i> New Magical Chat
+                    </button>
+                </div>
+                <div class="chat-history">
+                    <!-- Magical Chat History -->
+                </div>
+                <div class="sidebar-footer">
+                    <button class="settings-btn">
+                        <i class="fas fa-broom"></i> Magical Settings
+                    </button>
+                </div>
+            </aside>
+            
+            <main class="main-content">
+                <div class="chat-container" id="chatContainer">
+                    <!-- Magical Messages will appear here -->
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-box">
+                        <button id="voiceInputBtn" class="voice-input-btn">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </button>
+                        <textarea 
+                            id="userInput" 
+                            placeholder="Cast your spell (type your message)..." 
+                            rows="1"
+                            autofocus
+                        ></textarea>
+                        <button id="sendButton">
+                            <i class="fas fa-feather"></i>
+                        </button>
+                    </div>
+                    <div class="input-features">
+                        <button class="feature-btn" id="imageUploadBtn" title="Share a magical scroll">
+                            <i class="fas fa-scroll"></i>
+                        </button>
+                        <button class="feature-btn" id="cameraBtn" title="Capture magical moment">
+                            <i class="fas fa-camera-retro"></i>
+                        </button>
+                        <button class="feature-btn" id="translateBtn" title="Spell translation">
+                            <i class="fas fa-book-spell"></i>
+                        </button>
+                    </div>
+                    <div class="disclaimer">
+                        This is a magical demo version. Messages are not connected to the actual Hogwarts.
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const magicalKnowledgeBase = [
+    {
+        question: "What is the spell to unlock doors?",
+        answer: "The spell to unlock doors is *Alohomora*. It's quite useful for getting into places you shouldn't be!"
+    },
+    {
+        question: "How do I summon a Patronus?",
+        answer: "To summon a Patronus, focus on your happiest memory and cast the spell *Expecto Patronum*. It requires a lot of practice and strong positive emotions."
+    },
+    {
+        question: "What is the recipe for Polyjuice Potion?",
+        answer: "The recipe for Polyjuice Potion includes lacewing flies, leeches, and a piece of the person you wish to turn into. It takes about a month to brew."
+    },
+    {
+        question: "Who is the headmaster of Hogwarts?",
+        answer: "The headmaster of Hogwarts is *Albus Dumbledore*. He is one of the greatest wizards of all time."
+    },
+    {
+        question: "What is the best way to defend against the Dark Arts?",
+        answer: "The best way to defend against the Dark Arts is to stay vigilant, practice defensive spells, and always be prepared. Spells like *Protego* can help shield you from attacks."
+    }
+];
+
+    </script>
+</body>
+</html> 
